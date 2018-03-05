@@ -1,6 +1,5 @@
 #pragma once
 
-#include <ctime>
 #include "ofMain.h"
 #include "ofxCv.h"
 #include "ofxFaceTracker.h"
@@ -16,8 +15,11 @@ class ofApp : public ofBaseApp{
 		ofVideoGrabber cam;
 		ofxFaceTracker tracker;
 		ofEasyCam easyCam;
-    		ofImage img;
+        ofImage img;
+    
   		string path;
+        string absolutePath;
+    
   		int x;
   		int img_count=0;
   		int width;
